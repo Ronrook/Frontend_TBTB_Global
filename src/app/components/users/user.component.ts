@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { UserInterface } from '../../interfaces/user.interface';
 import { UserService } from '../../services/user.service';
+import { NgFor } from '@angular/common';
 
 
 @Component({
@@ -8,6 +9,7 @@ import { UserService } from '../../services/user.service';
     templateUrl: './user.component.html',
     styleUrls: ['./user.component.css'],
     standalone: true,
+    imports: [NgFor]
 })
 export class UserComponent implements OnInit {
 
