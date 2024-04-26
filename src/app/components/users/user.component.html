@@ -3,7 +3,7 @@
     <div class="row">
         <div class="col">
         <div class="form-group">
-            <input type="text" class="form-control" name="filterPost" placeholder="Search...">
+            <input type="text" class="form-control" name="filterUser" placeholder="Buscar..." [(ngModel)]="filterUser">
         </div>
         </div>
     </div>
@@ -20,7 +20,7 @@
                 </tr>
             </thead>
             <tbody>
-                <tr *ngFor="let user of users">
+                <tr *ngFor="let user of users | filter:filterUser">
                     <td>{{user.id}}</td>
                     <td>{{user.name}}</td>
                     <td>{{user.email}}</td>

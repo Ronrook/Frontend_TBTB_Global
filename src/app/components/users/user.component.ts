@@ -2,6 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import { UserInterface } from '../../interfaces/user.interface';
 import { UserService } from '../../services/user.service';
 import { NgFor } from '@angular/common';
+import { FormsModule } from '@angular/forms';
+import { PipesModule } from '../../pipes.module';
+
 
 
 @Component({
@@ -9,11 +12,12 @@ import { NgFor } from '@angular/common';
     templateUrl: './user.component.html',
     styleUrls: ['./user.component.css'],
     standalone: true,
-    imports: [NgFor]
+    imports: [NgFor, FormsModule,PipesModule] 
 })
 export class UserComponent implements OnInit {
 
     users: UserInterface [] = [];
+    filterUser = '';
     
     
     constructor(private userService: UserService) { }
