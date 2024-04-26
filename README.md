@@ -27,7 +27,7 @@ de información de un conjunto de usuarios de diferentes maneras
 
 ### Configuración Local
 1. Clonar el repositorio de gitHub
-2. Desde el directorio principal, ejecuta el comando npm install para instalar las dependencias.
-3. Ejecuta ng serve para ejecutar el proyecto.
+2. Desde el directorio principal, ejecuta el comando `npm install` para instalar las dependencias.
+3. Ejecuta `ng serve` para ejecutar el proyecto.
 4. Abre tu navegador y accede a la siguiente URL: http://localhost:4200/
 
