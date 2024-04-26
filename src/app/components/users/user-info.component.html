@@ -1,0 +1,17 @@
+<div class="container">
+    <div class="row justify-content-center align-items-center" style="min-height: 100vh;">
+        <div class="col-lg-5">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">{{ user.name }}</h5>
+                    <p class="card-text"><strong>Username: </strong>{{ user.username }}</p>
+                    <p class="card-text"><strong>Phone: </strong>{{ user.phone }}</p>
+                    <p class="card-text"><strong>Email:</strong> {{ user.email }}</p>
+                    <p class="card-text"><strong>Website:</strong> {{ user.website }}</p>
+                    <p class="card-text"><strong>Address:</strong> {{ user.address.street }}, {{ user.address.suite }}, {{ user.address.city }}, {{ user.address.zipcode }}</p>
+                    <p class="card-text"><strong>Geo Location:</strong> Lat: {{ user.address.geo.lat }}, Lng: {{ user.address.geo.lng }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
