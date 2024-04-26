@@ -10,9 +10,14 @@ export class UserService {
 
     constructor(private http: HttpClient) { }
 
-    //Obtener todos los usuarios
+    
     getUsers(): Observable<any[]> {
         return this.http.get<any[]>(this.apiUrl);
+    }
+
+    getUserById(userId: number): Observable<any> {
+        const url = `${this.apiUrl}/${userId}`;
+        return this.http.get<any>(url);
     }
 
 }

@@ -4,6 +4,7 @@ import { UserService } from '../../services/user.service';
 import { NgFor } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { PipesModule } from '../../pipes.module';
+import { RouterLink } from '@angular/router';
 
 
 
@@ -12,7 +13,7 @@ import { PipesModule } from '../../pipes.module';
     templateUrl: './user.component.html',
     styleUrls: ['./user.component.css'],
     standalone: true,
-    imports: [NgFor, FormsModule,PipesModule] 
+    imports: [NgFor, FormsModule,PipesModule, RouterLink] 
 })
 export class UserComponent implements OnInit {
 

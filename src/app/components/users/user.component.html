@@ -1,5 +1,5 @@
 <div class="container">
-    <h1>Listado De Usuarios</h1>
+    <h1>List Of Employees</h1>
     <div class="row">
         <div class="col">
         <div class="form-group">
@@ -15,8 +15,8 @@
                 <tr>
                 <th>ID</th>
                 <th>Name</th>
-                <th>Email</th>
-                <th>PHONE</th>
+                <th>EMAIL</th>
+                <th>COMPANY</th>
                 </tr>
             </thead>
             <tbody>
@@ -24,7 +24,11 @@
                     <td>{{user.id}}</td>
                     <td>{{user.name}}</td>
                     <td>{{user.email}}</td>
-                    <td>{{user.phone}}</td>
+                    <td>{{user.company.name}}</td>
+                    <td class="text-center ">
+                        <button type="button" class="btn btn-info" 
+                        [routerLink]="['/user/information', user.id]" >Info</button>
+                    </td>
                 </tr>
             </tbody>
         </table>
